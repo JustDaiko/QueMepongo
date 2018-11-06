@@ -8,4 +8,6 @@ public interface UsuarioManager {
 	ArrayList<Usuario> getAllusers();
 	
 	void setUsers(ArrayList<Usuario> users);
+	
+	void setEmail(String username, String email);
 }

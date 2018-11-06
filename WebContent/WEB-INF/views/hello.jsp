@@ -10,6 +10,8 @@
     <c:forEach items="${model.users}" var="user">
       <c:out value="${user.user}"/> <c:out value="${user.email}"/><br><br>
     </c:forEach>
-    
+    <br>
+    	<a href="<c:url value="changeEmail.jsp"/>">ChangeEmail</a>
+    <br>
   </body>
 </html>
