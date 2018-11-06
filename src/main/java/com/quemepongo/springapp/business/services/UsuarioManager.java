@@ -6,4 +6,6 @@ import com.quemepongo.springapp.business.entities.Usuario;
 
 public interface UsuarioManager {
 	ArrayList<Usuario> getAllusers();
+	
+	void setUsers(ArrayList<Usuario> users);
 }
