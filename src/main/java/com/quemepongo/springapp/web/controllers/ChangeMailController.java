@@ -32,7 +32,7 @@ public class ChangeMailController {
         String emailnuevo = changeEmail.getEmail();
         logger.info("Increasing prices by " + emailnuevo + "%.");
 
-        usermanager.setEmail("Gaston gay", emailnuevo);
+        usermanager.setEmail("Gaston", emailnuevo);
 
         return "redirect:/hello.htm";
     }

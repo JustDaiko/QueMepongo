@@ -22,7 +22,7 @@ public class SpringappBusinessConfig {
         
         Usuario product = new Usuario();
         product.setEmail("ola@gg.com");
-        product.setUser("Gaston gay");
+        product.setUser("Gaston");
         products.add(product);
         
         product = new Usuario();

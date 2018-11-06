@@ -11,7 +11,7 @@
       <c:out value="${user.user}"/> <c:out value="${user.email}"/><br><br>
     </c:forEach>
     <br>
-    	<a href="<c:url value="changeEmail.jsp"/>">ChangeEmail</a>
+    	<a href="<c:url value="/changeEmail.htm"/>">ChangeEmail</a>
     <br>
   </body>
 </html>
