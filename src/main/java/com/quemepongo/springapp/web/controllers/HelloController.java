@@ -11,9 +11,9 @@ public class HelloController {
 	
 	protected final Log logger = LogFactory.getLog(getClass());
 
-    @RequestMapping(value="/hello.htm")
+	@RequestMapping(value="/hello.htm")
     public ModelAndView handleRequest() {
         logger.info("Returning hello view");
-        return new ModelAndView("/WEB-INF/views/hello.jsp");
+        return new ModelAndView("hello.jsp");
     }
 }
