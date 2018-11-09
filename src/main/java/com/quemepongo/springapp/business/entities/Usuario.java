@@ -1,15 +1,27 @@
 package com.quemepongo.springapp.business.entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="usuario")
 public class Usuario {
-	private int id;
+	
+	@Id
+    @Column(name = "id")
+    //@GeneratedValue(strategy = GenerationType.AUTO)
+	private Integer id;
+	
 	private String user;
 	private String email;
 	private String password;
 	
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getUser() {

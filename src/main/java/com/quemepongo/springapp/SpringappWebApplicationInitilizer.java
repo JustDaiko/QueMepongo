@@ -5,6 +5,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 import com.quemepongo.springapp.business.SpringappBusinessConfig;
 import com.quemepongo.springapp.web.SpringappWebConfig;
 
+
 public class SpringappWebApplicationInitilizer extends AbstractAnnotationConfigDispatcherServletInitializer  {
 
 	@Override

@@ -1,4 +1,10 @@
+C:\Proyectos Java\Spring\QueMepongo\src\main\java\com\quemepongo\springapp\business\services\UsuarioManager.java
+C:\Proyectos Java\Spring\QueMepongo\src\main\java\com\quemepongo\springapp\business\repositories\UsuarioRepository.java
+C:\Proyectos Java\Spring\QueMepongo\src\main\java\com\quemepongo\springapp\web\controllers\UserController.java
+C:\Proyectos Java\Spring\QueMepongo\src\main\java\com\quemepongo\springapp\business\services\ChangeEmail.java
 C:\Proyectos Java\Spring\QueMepongo\src\main\java\com\quemepongo\springapp\business\SpringappBusinessConfig.java
+C:\Proyectos Java\Spring\QueMepongo\src\main\java\com\quemepongo\springapp\business\services\JPAUsuarioManager.java
+C:\Proyectos Java\Spring\QueMepongo\src\main\java\com\quemepongo\springapp\business\entities\Usuario.java
 C:\Proyectos Java\Spring\QueMepongo\src\main\java\com\quemepongo\springapp\web\SpringappWebConfig.java
-C:\Proyectos Java\Spring\QueMepongo\src\main\java\com\quemepongo\springapp\web\controllers\HelloController.java
 C:\Proyectos Java\Spring\QueMepongo\src\main\java\com\quemepongo\springapp\SpringappWebApplicationInitilizer.java
+C:\Proyectos Java\Spring\QueMepongo\src\main\java\com\quemepongo\springapp\web\controllers\ChangeMailController.java
