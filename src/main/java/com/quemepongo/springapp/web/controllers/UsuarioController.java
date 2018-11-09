@@ -12,9 +12,9 @@ public class UsuarioController {
 	
 	protected final Log logger = LogFactory.getLog(getClass());
 
-	@RequestMapping(value="/hello.htm")
+	@RequestMapping(value="/entrada.htm")
     public ModelAndView handleRequest() {
-		logger.info("Estamos en el controller");
-        return new ModelAndView("hello");
+		logger.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        return new ModelAndView("home");
     }
 }

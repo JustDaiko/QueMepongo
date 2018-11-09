@@ -13,12 +13,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.quemepongo.springapp.business.services.ChangeEmail;
 import com.quemepongo.springapp.business.services.UsuarioManager;
 
-
-
 @Controller
 @RequestMapping(value="/changeEmail.htm")
 public class ChangeMailController {
-	/** Logger for this class and subclasses */
     protected final Log logger = LogFactory.getLog(getClass());
 
     @Autowired

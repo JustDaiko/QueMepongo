@@ -18,6 +18,7 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 import com.quemepongo.springapp.business.entities.Usuario;
+import com.quemepongo.springapp.business.services.UsuarioManager;
 
 @Configuration
 @ComponentScan
@@ -66,4 +67,5 @@ public class SpringappBusinessConfig {
         txnMgr.setEntityManagerFactory(entityManagerFactory().getObject());
         return txnMgr;
     }
+    
 }
