@@ -25,6 +25,6 @@
   <br>
   <input type="submit" value="Execute">
 </form:form>
-<a href="<c:url value="hello.htm"/>">Home</a>
+<a href="<c:url value="home.htm"/>">Home</a>
 </body>
 </html>
