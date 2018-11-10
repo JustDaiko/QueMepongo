@@ -22,7 +22,7 @@
 </head>
 <body>
   <!--Location-->
-  <h5 id="location"><span class="mdi mdi-map-marker"></span> CÃ³rdoba, Argentina</h5>
+  <h5 id="location"><span class="mdi mdi-map-marker"></span> <c:out value="${model.weather.name}"/> </h5>
   <!--Settings wheel-->
   <i class="material-icons" id="settings-wheel">settings</i>
   <!--Settings panel-->
@@ -33,11 +33,11 @@
     <hr>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
       <input class="mdl-textfield__input" type="number" id="minima">
-      <label class="mdl-textfield__label" for="minima">MÃ­nima</label>
+      <label class="mdl-textfield__label" for="minima">Mínima</label>
     </div>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="number" id="maxima">
-        <label class="mdl-textfield__label" for="maxima">MÃ¡xima</label>
+        <label class="mdl-textfield__label" for="maxima">Máxima</label>
     </div>
     <button class="mdl-button mdl-js-button mdl-button--raised" id="svae-settings-button">
         Guardar
@@ -56,7 +56,7 @@
             <div class="rainy__rain"></div>
           </div>
         </div>
-        <h1>23Â°C</h1>
+        <h1> 2333 </h1>
         <ul class="mdl-list">
             <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
@@ -77,7 +77,6 @@
               </span>
             </li>
           </ul>
-          <a href="<c:url value="/changeEmail.htm"/>">ChangeEmail</a>
       </div>
 
       <!--Forecast suggestion-->
@@ -88,14 +87,14 @@
 
     <!--Extended forecast-->
     <div class="mdl-card__supporting-text extended-forecast-title">
-      PronÃ³stico extendido
+      Pronóstico extendido
     </div>
     <div class="mdl-card__actions mdl-card--border extended-forecast">
       <div class="container-fluid row">
         <div class="col-lg-4 extended-forecast-item">
             <h3>Lunes</h3>
             <div class="sunny"></div>
-            <h3>244444Â°C</h3>
+            <h3>24°C</h3>
         </div>
         <div class="col-lg-4 extended-forecast-item">
             <h3>Martes</h3>
@@ -103,15 +102,15 @@
               <div class="partly_cloudy__sun"></div>
               <div class="partly_cloudy__cloud"></div>
             </div>
-            <h3>24Â°C</h3>
+            <h3>24°C</h3>
         </div>
         <div class="col-lg-4 extended-forecast-item">
-            <h3>MiÃ©rcoles</h3>
+            <h3>Miércoles</h3>
             <div class="thundery">
               <div class="thundery__cloud"></div>
               <div class="thundery__rain"></div>
             </div>
-            <h3>24Â°C</h3>
+            <h3>24°C</h3>
         </div>
       </div>
     </div>

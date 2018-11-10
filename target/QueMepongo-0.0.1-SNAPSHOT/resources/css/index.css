@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    background-image: url('../res/rain-blur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#location{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    margin: 0px;
+    z-index: 80;
+}
+
+#settings-wheel{
+    color: white;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    font-size: 3em;
+    cursor: pointer;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.22);
+    z-index: 99;
+}
+
+.settings-panel{
+    height: 100%;
+    width: 250px;
+    margin-right: -250px;
+    box-shadow: -3px 0px 6px rgba(0, 0, 0, 0.22);
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 90;
+    background-color: whitesmoke;
+    padding: 16px;
+    text-align: center;
+}
+
+.forecast-card{
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.22);
+    color: white;
+    margin-bottom: 50px;
+}
+
+.forecast-card .mdl-card__title{
+    background: url('../res/rain.jpg');
+    background-size: cover;
+    color: white;
+    align-items: unset;
+    padding: 16px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.22);
+    box-shadow: inset 0px -2px 4px rgba(0, 0, 0, 0.22);
+}
+
+.today-forecast{
+    border-right: 2px solid white;
+    padding-top: 48px;
+}
+
+.weather-icon{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.forecast-card .mdl-card__title h1{
+    margin-left: 24px;
+    text-align: center;
+}
+
+.today-forecast .mdl-list{
+    margin: auto;
+}
+
+.today-forecast .mdl-list__item, .today-forecast .mdl-list__item-icon{
+    color: white;
+}
+
+.suggestion{
+    padding: 32px;
+    display: flex;
+}
+
+.suggestion h2{
+    margin: 0px;
+    align-self: center;
+    flex-direction: column;
+}
+
+.mdl-card__supporting-text{
+    font-size: 2em;
+    color: #333;
+    padding: 32px;
+}
+
+.extended-forecast-title{
+    line-height: 1em;
+}
+
+.extended-forecast{
+    padding: 32px 0px;
+    background-color: #2196F3;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.22);
+}
+
+.extended-forecast-item:not(:last-child){
+    display: inline-block;
+}
+
+.extended-forecast-item>div{
+    margin: auto;
+}
+
+.extended-forecast h3{
+    text-align: center;
+}
+
+@media screen and (max-width: 1202px) {
+
+    .forecast-card{
+        width: 75%;
+    }
+
+    .today-forecast, .suggestion, .mdl-card__title{
+        display: block;
+    }
+
+    .today-forecast{
+        border-right: none !important;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+
+    .forecast-card{
+        width: 100%;
+        top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .suggestion h2{
+        font-size: 2em;
+        text-align: center;
+    }
+
+}
