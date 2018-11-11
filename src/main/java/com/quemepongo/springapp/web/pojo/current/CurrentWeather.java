@@ -1,4 +1,4 @@
-package com.quemepongo.springapp.web.pojo;
+package com.quemepongo.springapp.web.pojo.current;
 
 import java.util.ArrayList;
 

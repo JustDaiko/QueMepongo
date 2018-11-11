@@ -9,21 +9,21 @@
   </style>  
 </head>
 <body>
-<h1><fmt:message key="priceincrease.heading"/></h1>
-<form:form method="post" modelAttribute="changeEmail">
-  <table >
+<form:form method="post" modelAttribute="usuario">
+  <table>
     <tr>
-      <td align="right" width="20%">Email nuevo:</td>
+      <td align="right" width="20%">Usuario:</td>
         <td width="20%">
-          <form:input path="email"/>
+          <form:input path="userName"/>
         </td>
-        <td width="60%">
-          <form:errors path="email" cssClass="error"/>
-        </td>
+      <td align="right" width="20%">Contraseña:</td>
+      <td width="20%">
+          <form:input path="password"/>
+      </td>
     </tr>
   </table>
   <br>
-  <input type="submit" value="Execute">
+  <input type="submit" value="Iniciar sesion">
 </form:form>
 <a href="<c:url value="home.htm"/>">Home</a>
 </body>

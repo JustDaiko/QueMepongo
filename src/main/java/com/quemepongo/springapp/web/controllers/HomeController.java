@@ -7,12 +7,11 @@ import java.util.Map;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.quemepongo.springapp.web.pojo.CurrentWeather;
+import com.quemepongo.springapp.web.pojo.current.CurrentWeather;
 
 import org.springframework.web.client.RestTemplate;
 
@@ -26,7 +25,7 @@ public class HomeController {
     public ModelAndView handleRequest() {
 		restTemplate = new RestTemplate();
 		
-		String urlAPI = "http://api.openweathermap.org/data/2.5/weather?q=London&APPID=317792e3c967ee366cb4bef73f69e6e0";
+		String urlAPI = "http://api.openweathermap.org/data/2.5/weather?id=3860259&units=metric&lang=es&APPID=317792e3c967ee366cb4bef73f69e6e0";
 		
 		CurrentWeather weather = restTemplate.getForObject(urlAPI, CurrentWeather.class);
 		weather = parseToRealData(weather);
@@ -40,18 +39,12 @@ public class HomeController {
     }
 	
 	private CurrentWeather parseToRealData(CurrentWeather weather) {
-		//De kelvin a celcius
-		double kelvin = weather.getMain().getTemp();
-		double celcius = kelvin - 273.15;
+		//De m/sec a ks/hr
+		double mPerSecond = weather.getWind().getSpeed();
+		double kmPerHour = mPerSecond * 3.6;
 		
-		celcius = round(celcius,2);
-		
-		weather.getMain().setTemp(celcius);
-		
-		
-		//de m/sec a ks/hr
-		
-		
+		kmPerHour = round(kmPerHour, 2);
+		weather.getWind().setSpeed(kmPerHour);
 		
 		return weather;
 	}

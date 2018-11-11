@@ -43,7 +43,7 @@
         Guardar
     </button>
   </div>
-
+	
   <!--Card-->
   <div class="forecast-card mdl-card">
     <!--Title and background-->
@@ -77,6 +77,7 @@
               </span>
             </li>
           </ul>
+          <a href="<c:url value="login.htm"/>">Increase Prices</a>
       </div>
 
       <!--Forecast suggestion-->

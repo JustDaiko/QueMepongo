@@ -1,13 +1,27 @@
 package com.quemepongo.springapp.business.services;
 
-import java.util.ArrayList;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.quemepongo.springapp.business.entities.Usuario;
+import com.quemepongo.springapp.business.repositories.UsuarioRepository;
 
-public interface UsuarioManager {
-	ArrayList<Usuario> getAllusers();
+@Service
+public class UsuarioManager implements IUsuarioManager {
+
+	@Autowired
+	private UsuarioRepository usuarioRepository;
 	
-	void setUsers(ArrayList<Usuario> users);
+	@Override
+	public boolean tryLogin(Usuario pUser) {
+		Iterable<Usuario> allUsers = usuarioRepository.findAll();
+		
+		for (Usuario usuario : allUsers) {
+			usuario.tryLogin(pUser);
+		}
+		
+		return false;
+	}
 	
-	void setEmail(String username, String email);
+	
 }

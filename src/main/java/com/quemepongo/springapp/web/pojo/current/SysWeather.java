@@ -1,4 +1,4 @@
-package com.quemepongo.springapp.web.pojo;
+package com.quemepongo.springapp.web.pojo.current;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
