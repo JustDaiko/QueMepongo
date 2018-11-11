@@ -56,18 +56,18 @@
             <div class="rainy__rain"></div>
           </div>
         </div>
-        <h1> 2333 </h1>
+        <h1> <c:out value="${model.weather.main.temp}"/>°C </h1>
         <ul class="mdl-list">
             <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 <i class="mdi mdi-chart-bubble mdl-list__item-icon"></i>
-                50% humedad
+                <c:out value="${model.weather.main.humidity}"/>% humedad
               </span>
             </li>
             <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 <i class="mdi mdi-weather-windy mdl-list__item-icon"></i>
-                24 km/h
+                <c:out value="${model.weather.wind.speed}"/> km/h
             </span>
             </li>
             <li class="mdl-list__item">
