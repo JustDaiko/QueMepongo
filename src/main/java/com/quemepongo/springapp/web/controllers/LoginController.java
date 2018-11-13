@@ -9,12 +9,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.servlet.ModelAndView;
 
-import com.quemepongo.springapp.business.entities.Usuario;
 import com.quemepongo.springapp.business.services.IUsuarioManager;
+import com.quemepongo.springapp.web.pojo.login.UserView;
 
 @Controller
 @RequestMapping(value="/login.htm")
+@SessionAttributes("UserSession")
 public class LoginController {
     protected final Log logger = LogFactory.getLog(getClass());
 
@@ -22,25 +25,29 @@ public class LoginController {
     private IUsuarioManager usermanager;
 
     @RequestMapping(method = RequestMethod.POST)
-    public String onSubmit(@Valid Usuario user, BindingResult result)
+    public String onSubmit(@Valid UserView userAAA, BindingResult result)
     {
         if (result.hasErrors()) {
             return "login";
         }
         
-        
-        if(usermanager.tryLogin(user)) {
+        if(usermanager.tryLogin(userAAA)) {
+        	
         	return "redirect:/home.htm";
         }
-        
+        userAAA.setError(true);
         
         return "login";
     }
-
+    
     @RequestMapping(method = RequestMethod.GET)
-    protected Usuario formBackingObject() {
-    	Usuario user = new Usuario();
+    protected ModelAndView initaaa() {
+    	ModelAndView model = new ModelAndView();
+    	model.setViewName("login");
     	
-        return user;
+    	UserView user = new UserView();
+    	model.addObject("userAAA", user);
+    	
+        return model;
     }
 }

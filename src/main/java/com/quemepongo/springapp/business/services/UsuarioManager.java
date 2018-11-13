@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.quemepongo.springapp.business.entities.Usuario;
 import com.quemepongo.springapp.business.repositories.UsuarioRepository;
+import com.quemepongo.springapp.web.pojo.login.UserView;
 
 @Service
 public class UsuarioManager implements IUsuarioManager {
@@ -13,7 +14,7 @@ public class UsuarioManager implements IUsuarioManager {
 	private UsuarioRepository usuarioRepository;
 	
 	@Override
-	public boolean tryLogin(Usuario pUser) {
+	public boolean tryLogin(UserView pUser) {
 		Iterable<Usuario> allUsers = usuarioRepository.findAll();
 		
 		for (Usuario usuario : allUsers) {
