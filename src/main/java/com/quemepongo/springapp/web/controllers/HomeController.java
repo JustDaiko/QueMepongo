@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.quemepongo.springapp.web.pojo.current.CurrentWeather;
+import com.quemepongo.springapp.web.pojo.forecast.Forecast;
 
 import org.springframework.web.client.RestTemplate;
 
@@ -25,11 +26,13 @@ public class HomeController {
     public ModelAndView handleRequest() {
 		restTemplate = new RestTemplate();
 		
-		String urlAPI = "http://api.openweathermap.org/data/2.5/weather?id=3860259&units=metric&lang=es&APPID=317792e3c967ee366cb4bef73f69e6e0";
+		String urlAPI = "http://api.openweathermap.org/data/2.5/weather?id=712861&units=metric&lang=es&APPID=317792e3c967ee366cb4bef73f69e6e0";
+		String urlAPI2="http://api.openweathermap.org/data/2.5/forecast?id=3860259&units=metric&lang=es&APPID=317792e3c967ee366cb4bef73f69e6e0";
 		
 		CurrentWeather weather = restTemplate.getForObject(urlAPI, CurrentWeather.class);
 		weather = parseToRealData(weather);
 		
+		Forecast forecast = restTemplate.getForObject(urlAPI2,Forecast.class);
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
         myModel.put("weather", weather);
