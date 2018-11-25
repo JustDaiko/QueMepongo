@@ -1,11 +1,17 @@
-D:\Mis cosas\Programacion\Java proyects\QueMepongo\src\main\java\com\quemepongo\springapp\web\controllers\ChangeMailController.java
-D:\Mis cosas\Programacion\Java proyects\QueMepongo\src\main\java\com\quemepongo\springapp\web\SpringappWebConfig.java
-D:\Mis cosas\Programacion\Java proyects\QueMepongo\src\main\java\com\quemepongo\springapp\business\SpringappBusinessConfig.java
-D:\Mis cosas\Programacion\Java proyects\QueMepongo\src\main\java\com\quemepongo\springapp\business\repositories\UsuarioRepository.java
-D:\Mis cosas\Programacion\Java proyects\QueMepongo\src\main\java\com\quemepongo\springapp\web\controllers\HomeController.java
-D:\Mis cosas\Programacion\Java proyects\QueMepongo\src\main\java\com\quemepongo\springapp\business\entities\Usuario.java
-D:\Mis cosas\Programacion\Java proyects\QueMepongo\src\main\java\com\quemepongo\springapp\business\services\JPAUsuarioManager.java
-D:\Mis cosas\Programacion\Java proyects\QueMepongo\src\main\java\com\quemepongo\springapp\web\pojo\CurrentWeather.java
-D:\Mis cosas\Programacion\Java proyects\QueMepongo\src\main\java\com\quemepongo\springapp\SpringappWebApplicationInitilizer.java
-D:\Mis cosas\Programacion\Java proyects\QueMepongo\src\main\java\com\quemepongo\springapp\business\services\UsuarioManager.java
-D:\Mis cosas\Programacion\Java proyects\QueMepongo\src\main\java\com\quemepongo\springapp\business\services\ChangeEmail.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\web\controllers\HomeController.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\web\pojo\current\WindWeather.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\web\pojo\current\Weather.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\web\pojo\current\SysWeather.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\business\SpringappBusinessConfig.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\business\entities\Usuario.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\web\pojo\current\MainWeather.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\business\services\IUsuarioManager.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\web\pojo\current\CurrentWeather.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\business\services\UsuarioManager.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\business\repositories\UsuarioRepository.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\web\SpringappWebConfig.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\SpringappWebApplicationInitilizer.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\web\pojo\login\UserView.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\web\controllers\LoginController.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\web\pojo\current\CloudsWeather.java
+C:\Users\alexi\Desktop\QueMepongo-master\src\main\java\com\quemepongo\springapp\web\pojo\current\CoordWeather.java

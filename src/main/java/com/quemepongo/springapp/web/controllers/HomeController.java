@@ -64,7 +64,7 @@ public class HomeController {
         	String hora = textoDateTime.substring(11,13);
         	String dia = textoDateTime.substring(8,10);
         	String mes =textoDateTime.substring(5, 7);
-        	String año = textoDateTime.substring(0,4) ;
+        	String aï¿½o = textoDateTime.substring(0,4) ;
 //        	switch (mes){
 //        	case "01":
 //        		mes = "Enero";
@@ -106,7 +106,7 @@ public class HomeController {
         	
 	        
 //        	}
-        	diaCompleto = dia+"/"+mes+"/"+año;
+        	diaCompleto = dia+"/"+mes+"/"+aï¿½o;
         	date = new SimpleDateFormat("dd/MM/yyyy").parse(diaCompleto);
         	c.setTime(date);
         	switch (c.getTime().getDay()) {
@@ -117,7 +117,7 @@ public class HomeController {
 	    		diaCompleto= "Martes";
 	        	break;	
         	case 3:
-        		diaCompleto= "Miércoles";
+        		diaCompleto= "Miï¿½rcoles";
             	break;	
         	case 4:
         		diaCompleto= "Jueves";
@@ -126,7 +126,7 @@ public class HomeController {
         		diaCompleto= "Viernes";
             	break;	
         	case 6:
-        		diaCompleto= "Sábado";
+        		diaCompleto= "Sï¿½bado";
             	break;	
         	case 7:
         		diaCompleto= "Domingo";
@@ -135,7 +135,7 @@ public class HomeController {
         	nombreDias.add(diaCompleto);
         	forecast.setValoresSeteadosPorMi(nombreDias);
         	
-        	System.out.println("["+i+"] año: "+año +", mes: "+ mes + ", día: "+dia+", hora: "+ hora);
+        	System.out.println("["+i+"] aï¿½o: "+aï¿½o +", mes: "+ mes + ", dï¿½a: "+dia+", hora: "+ hora);
         }
         
         
@@ -148,8 +148,8 @@ public class HomeController {
 	}
        
 			
-			// si la variable es el día de mañana, lo subis al array.
-//			if(hour es dia de mañana) {
+			// si la variable es el dï¿½a de maï¿½ana, lo subis al array.
+//			if(hour es dia de maï¿½ana) {
 //				
 //				
 //				Calendar cal = Calendar.getInstance();

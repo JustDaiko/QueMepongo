@@ -1,4 +1,4 @@
-<%@ include file="/WEB-INF/views/include.jsp" %>
+ï»¿<%@ include file="/WEB-INF/views/include.jsp" %>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -44,7 +44,7 @@
               <label class="mdl-textfield__label" for="maxima">Siento frio debajo de los...</label>
           </div>
           <div class="mdl-tooltip" data-mdl-for="maxima">
-              Temperatura debajo de la cual creo que hace frío
+              Temperatura debajo de la cual creo que hace frÃ­o
           </div>
           <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="paraguas">
             <span class="mdl-checkbox__label">Paraguas</span>
@@ -70,7 +70,7 @@
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
               <input class="mdl-textfield__input" type="password" id="password">
-              <label class="mdl-textfield__label" for="password">Contraseña</label>
+              <label class="mdl-textfield__label" for="password">ContraseÃ±a</label>
           </div>
           <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="login-button">
               Ingresar
@@ -87,7 +87,7 @@
         <div>
           <div class="weather-icon"></div>
         </div>
-        <h1> <c:out value="${model.weather.main.temp}"/>°C </h1>
+        <h1> <c:out value="${model.weather.main.temp}"/>Â°C </h1>
         <ul class="mdl-list">
             <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
@@ -118,14 +118,14 @@
 
     <!--Extended forecast-->
     <div class="mdl-card__supporting-text extended-forecast-title">
-      Pronóstico extendido
+      PronÃ³stico extendido
     </div>
     <div class="mdl-card__actions mdl-card--border extended-forecast">
       <div class="container-fluid row">
         <div class="col-lg-4 extended-forecast-item">
             <h3><c:out value= "${model.forecast.valoresSeteadosPorMi[7]}"/> </h3>
             <div class="sunny"></div>
-            <h3> <c:out value ="${model.forecast.list[7].main.temp}"/>°C</h3>
+            <h3> <c:out value ="${model.forecast.list[7].main.temp}"/>ï¿½C</h3>
         </div>
         <div class="col-lg-4 extended-forecast-item">
             <h3><c:out value= "${model.forecast.valoresSeteadosPorMi[15]}"/></h3>
@@ -133,7 +133,7 @@
               <div class="partly_cloudy__sun"></div>
               <div class="partly_cloudy__cloud"></div>
             </div>
-            <h3><c:out value ="${model.forecast.list[15].main.temp}"/>°C</h3>
+            <h3><c:out value ="${model.forecast.list[15].main.temp}"/>ï¿½C</h3>
         </div>
         <div class="col-lg-4 extended-forecast-item">
             <h3><c:out value= "${model.forecast.valoresSeteadosPorMi[23]}"/></h3>
@@ -141,7 +141,7 @@
               <div class="thundery__cloud"></div>
               <div class="thundery__rain"></div>
             </div>
-            <h3><c:out value ="${model.forecast.list[23].main.temp}"/>°C</h3>
+            <h3><c:out value ="${model.forecast.list[23].main.temp}"/>ï¿½C</h3>
         </div>
       </div>
     </div>

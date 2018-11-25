@@ -3,6 +3,8 @@ package com.quemepongo.springapp.web.pojo.forecast;
 import java.util.ArrayList;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.quemepongo.springapp.web.pojo.forecast.atributos.City;
+import com.quemepongo.springapp.web.pojo.forecast.atributos.HourForecast;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Forecast {
@@ -50,5 +52,4 @@ public class Forecast {
 	public void setList(ArrayList<List> list) {
 		this.list = list;
 	}
-	
 }
