@@ -17,6 +17,7 @@ import com.quemepongo.springapp.web.pojo.login.UserView;
 
 @Controller
 @RequestMapping(value="/login.htm")
+@SessionAttributes("UserSession")
 public class LoginController {
     protected final Log logger = LogFactory.getLog(getClass());
 

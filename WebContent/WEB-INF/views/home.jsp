@@ -108,7 +108,6 @@
               </span>
             </li>
           </ul>
-          <a href="<c:url value="login.htm"/>">Increase Prices</a>
       </div>
 
       <!--Forecast suggestion-->
@@ -124,25 +123,25 @@
     <div class="mdl-card__actions mdl-card--border extended-forecast">
       <div class="container-fluid row">
         <div class="col-lg-4 extended-forecast-item">
-            <h3>Lunes</h3>
+            <h3><c:out value= "${model.forecast.valoresSeteadosPorMi[7]}"/> </h3>
             <div class="sunny"></div>
-            <h3>24°C</h3>
+            <h3> <c:out value ="${model.forecast.list[7].main.temp}"/>�C</h3>
         </div>
         <div class="col-lg-4 extended-forecast-item">
-            <h3>Martes</h3>
+            <h3><c:out value= "${model.forecast.valoresSeteadosPorMi[15]}"/></h3>
             <div class="partly_cloudy">
               <div class="partly_cloudy__sun"></div>
               <div class="partly_cloudy__cloud"></div>
             </div>
-            <h3>24°C</h3>
+            <h3><c:out value ="${model.forecast.list[15].main.temp}"/>�C</h3>
         </div>
         <div class="col-lg-4 extended-forecast-item">
-            <h3>Miércoles</h3>
+            <h3><c:out value= "${model.forecast.valoresSeteadosPorMi[23]}"/></h3>
             <div class="thundery">
               <div class="thundery__cloud"></div>
               <div class="thundery__rain"></div>
             </div>
-            <h3>24°C</h3>
+            <h3><c:out value ="${model.forecast.list[23].main.temp}"/>�C</h3>
         </div>
       </div>
     </div>

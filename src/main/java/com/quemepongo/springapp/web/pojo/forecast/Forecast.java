@@ -12,8 +12,9 @@ public class Forecast {
 	private int cod;
 	private Double message;
 	private int cnt;
-	private ArrayList<HourForecast> hourForecast;
+	private ArrayList<List> list;
 	private City city;
+	private ArrayList<String> valoresSeteadosPorMi;
 	
 	public int getCod() {
 		return cod;
@@ -33,18 +34,22 @@ public class Forecast {
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
 	}
-	public ArrayList<HourForecast> getHourForecast() {
-		return hourForecast;
-	}
-	public void setHourForecast(ArrayList<HourForecast> hourForecast) {
-		this.hourForecast = hourForecast;
-	}
 	public City getCity() {
 		return city;
 	}
 	public void setCity(City city) {
 		this.city = city;
 	}
-	
-	
+	public ArrayList<String> getValoresSeteadosPorMi() {
+		return valoresSeteadosPorMi;
+	}
+	public void setValoresSeteadosPorMi(ArrayList<String> valoresSeteadosPorMi) {
+		this.valoresSeteadosPorMi = valoresSeteadosPorMi;
+	}
+	public ArrayList<List> getList() {
+		return list;
+	}
+	public void setList(ArrayList<List> list) {
+		this.list = list;
+	}
 }
