@@ -8,7 +8,7 @@ html{
 }
 
 body{
-    background-image: url('../res/rain-blur.jpg');
+    background-image: url('../res/cloudy-blur.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -49,6 +49,31 @@ body{
     text-align: center;
 }
 
+.settings-panel .mdl-checkbox{
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.settings-panel .account{
+    position: fixed;
+    bottom: 16px;
+    text-align: center;
+    width: 218px;
+}
+
+.settings-panel .account .username{
+    margin: 0px;
+}
+
+.settings-panel .account .logout{
+    color: #f44336;
+    cursor: pointer;
+}
+
+.settings-panel .account .logout:hover{
+    text-decoration: underline;
+}
+
 .forecast-card{
     width: 50%;
     position: absolute;
@@ -62,7 +87,7 @@ body{
 }
 
 .forecast-card .mdl-card__title{
-    background: url('../res/rain.jpg');
+    background-image: url('../res/cloudy.jpg');
     background-size: cover;
     color: white;
     align-items: unset;

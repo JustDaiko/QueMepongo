@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.quemepongo.springapp.web.pojo.login.UserView;
+
 @Entity
 @Table(name="usuario")
 public class Usuario {
@@ -25,7 +27,7 @@ public class Usuario {
 	@Column(name = "password")
 	private String password;
 	
-	public boolean tryLogin(Usuario pUser) {
+	public boolean tryLogin(UserView pUser) {
 		if(userName.equals(pUser.getUserName()) && password.equals(pUser.getPassword())) {
 			return true;
 		}
